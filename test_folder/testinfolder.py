@@ -14,3 +14,5 @@ print('I think, the problem was with exec()')
 
 print('Somebody recommended to use vars(). Need to research on what it is')
 
+print('Kind of insane')
+
