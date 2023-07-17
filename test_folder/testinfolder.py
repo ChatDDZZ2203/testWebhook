@@ -12,3 +12,5 @@ print('Sadly, I`ve started to just port += 1')
 
 print('I think, the problem was with exec()')
 
+print('Somebody recommended to use vars(). Need to research on what it is')
+
