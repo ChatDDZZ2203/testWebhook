@@ -2,6 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route('/my_route', methods=['GET', 'POST'])
 def simple():
     return f'Hello from my route, __name__: {__name__}'
