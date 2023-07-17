@@ -10,3 +10,5 @@ print('Still trying to fix it somehow. At the same time practicing typing on a f
 
 print('Sadly, I`ve started to just port += 1')
 
+print('I think, the problem was with exec()')
+
