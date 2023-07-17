@@ -1,9 +1,12 @@
-print('Is this going to be the cause of the POST request?')
+from flask import Flask
 
-print('Trying again. Added methods=["POST"] to the listener')
+app = Flask(__name__)
 
-print('Add some beautiful printing of request`s data')
+@app.route('/my_route', methods=['GET', 'POST'])
+def simple():
+    return f'Hello from my route, __name__: {__name__}'
 
-print('Ask claude.ai to fix everything and understand. Add SECRET token to repl`s "environ"')
 
+if __name__ == '__main__':
+    app.run('0.0.0.0', os.getenv('PORT', 3000))
 
