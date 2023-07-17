@@ -4,5 +4,6 @@ print('Trying again. Added methods=["POST"] to the listener')
 
 print('Add some beautiful printing of request`s data')
 
-print('Fix it')
+print('Ask claude.ai to fix everything and understand. Add SECRET token to repl`s "environ"')
+
 
