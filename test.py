@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/my_route', methods=['GET', 'POST'])
 def simple():
-    return f'Hello from my route. Come on Now! __name__: "{__name__}", ' \
+    return f'Hello from my route. Come on now! __name__: "{__name__}", ' \
            f'os.path.basename(__file__): "{os.path.basename(__file__)}"'
 
 
