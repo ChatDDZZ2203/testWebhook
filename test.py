@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 
 app = Flask(__name__)
@@ -5,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/my_route', methods=['GET', 'POST'])
 def simple():
-    return f'Hello from my route, __name__: {__name__}'
+    return f'Hello from my route, __name__: {__name__}, os.path.basename(__file__): {os.path.basename(__file__)}'
 
 
 if __name__ == '__main__':
