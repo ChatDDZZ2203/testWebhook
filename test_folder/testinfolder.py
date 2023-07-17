@@ -8,5 +8,5 @@ print('I may need to remember that threading.Thread doesnt have raise_exception 
 
 print('Still trying to fix it somehow. At the same time practicing typing on a father`s laptop keyboard')
 
-print('Sadly,
+print('Sadly, I`ve started to just port += 1')
 
