@@ -4,7 +4,7 @@ function sleep(ms) {
 
 async function changeWithDelay(delayMS, element) {
   await sleep(delayMS);
-  element.innerText = `I WAS CHANGED AFTER ${delayMS / 1000} seconds!`;
+  element.innerText = `This element was CHANGED AFTER ${delayMS / 1000} seconds!`;
 }
 
 document.querySelectorAll('.manipulative').forEach((element) => {
