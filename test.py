@@ -1,4 +1,4 @@
-# Pre-installed
+# Pre-installed modules
 import os
 
 # External modules
