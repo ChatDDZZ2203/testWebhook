@@ -18,6 +18,7 @@ def simple():
     # return render_template('index.html', file=f'{os.path.basename(__file__)=}', name=f'{__name__=}')
     return "ME"
 
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=3000)
 
