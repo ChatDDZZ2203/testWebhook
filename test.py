@@ -13,6 +13,7 @@ app.register_blueprint(js_blueprint)
 def simple():
     """
     :returns: rendered template
+    Adds ... to an index.html
     """
     return render_template('index.html', file=f'{os.path.basename(__file__)=}', name=f'{__name__=}')
 
