@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing it</title>
+</head>
+<body>
+
+    <h1 class="manipulative">
+       This is me, I`m from test.py.
+    </h1>
+    <p>Hello from my route. __name__: {{ name }}</p>
+    <p>os.path.basename(__file__): {{ file }}</p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

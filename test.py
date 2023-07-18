@@ -1,15 +1,16 @@
 import os
-from flask import Flask
+from flask import Flask, render_template, Blueprint
 
 app = Flask(__name__)
+js = Blueprint('js', __name__, static_folder='static')
+app.register_blueprint(js)
 
 
-@app.route('/my_route', methods=['GET', 'POST'])
+@app.route('/t', methods=['GET'])
 def simple():
-    return f'Hello from my route. Come on now! __name__: "{__name__}", ' \
-           f'os.path.basename(__file__): "{os.path.basename(__file__)}"'
+    return render_template('index.html', file=os.path.basename(__file__), name=__name__)
 
 
 if __name__ == '__main__':
-    app.run('0.0.0.0', os.getenv('PORT', 3000))
+    app.run(host='0.0.0.0', port=3001, debug=True)
 
