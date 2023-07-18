@@ -9,7 +9,7 @@ js_blueprint = Blueprint('js', __name__, static_folder='static')
 app.register_blueprint(js_blueprint)
 
 
-@app.route('/t', methods=['GET'])
+@app.route('/test', methods=['GET'])
 def simple():
     return render_template('index.html', file=os.path.basename(__file__), name=__name__)
 
