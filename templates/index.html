@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Testing it</title>
+    <title>From test.py</title>
 </head>
 <body>
 
     <h1 class="manipulative">
-       Test me, I`m from test.py.
+       Test me.
     </h1>
-    <p>Hello from my route. __name__: {{ name }}</p>
-    <p>os.path.basename(__file__): {{ file }}</p>
+    <p>{{ name }}</p>
+    <p>{{ file }}</p>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>

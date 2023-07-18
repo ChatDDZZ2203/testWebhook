@@ -11,7 +11,7 @@ app.register_blueprint(js_blueprint)
 
 @app.route('/test', methods=['GET'])
 def simple():
-    return render_template('index.html', file=os.path.basename(__file__), name=__name__)
+    return render_template('index.html', file=f'{os.path.basename(__file__)=}', name=f'{__name__=}')
 
 
 if __name__ == '__main__':
