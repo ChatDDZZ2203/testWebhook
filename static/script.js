@@ -8,6 +8,6 @@ async function changeWithDelay(delayMS, element) {
 }
 
 document.querySelectorAll('.manipulative').forEach((element) => {
-    changeWithDelay(3000, element);
+    changeWithDelay(2000, element);
 })
 
