@@ -11,7 +11,9 @@ app.register_blueprint(js_blueprint)
 
 @app.route('/test_flask_tryings', methods=['GET'])
 def simple():
-    """:returns: rendered template"""
+    """
+    :returns: rendered template
+    """
     return render_template('index.html', file=f'{os.path.basename(__file__)=}', name=f'{__name__=}')
 
 
