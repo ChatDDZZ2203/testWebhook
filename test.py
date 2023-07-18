@@ -9,7 +9,7 @@ js_blueprint = Blueprint('js', __name__, static_folder='static')
 app.register_blueprint(js_blueprint)
 
 
-@app.route('/test', methods=['GET'])
+@app.route('/test_flask_tryings', methods=['GET'])
 def simple():
     return render_template('index.html', file=f'{os.path.basename(__file__)=}', name=f'{__name__=}')
 
