@@ -17,7 +17,6 @@ def handle_test():
 
 
 def set_me_up(raw_app: Flask):
-    raw_app.template_folder = os.path.abspath(r'templates')
     raw_app.register_blueprint(js_blueprint)
     raw_app.add_url_rule(
         '/test', 'handle_test', handle_test, methods=['GET']
