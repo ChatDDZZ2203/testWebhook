@@ -11,12 +11,12 @@ app.register_blueprint(js_blueprint)
 
 @app.route('/test_flask_tryings', methods=['GET'])
 def simple():
-    # """
-    # :returns: rendered template
-    # Injects file and name to an index.html
-    # """
-    # return render_template('index.html', file=f'{os.path.basename(__file__)=}', name=f'{__name__=}')
-    return "me"
+    """
+    :returns: rendered template
+    Injects file and name to an index.html
+    """
+    return render_template('index.html', file=f'{os.path.basename(__file__)=}', name=f'{__name__=}')
+    # return "me"
 
 
 if __name__ == '__main__':
