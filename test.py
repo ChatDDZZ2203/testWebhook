@@ -9,7 +9,7 @@ js_blueprint = Blueprint('js', __name__, static_folder='static')
 app.register_blueprint(js_blueprint)
 
 
-@app.route('/test_flask_tryings', methods=['GET'])
+@app.route('/tft', methods=['GET'])
 def simple():
     """
     :returns: rendered template
