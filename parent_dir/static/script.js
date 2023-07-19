@@ -7,7 +7,7 @@ async function changeWithDelay(delayMS, element) {
   element.innerText = `This element was changed after ${delayMS / 1000} seconds passed from the program start`;
 }
 
-document.querySelectorAll('.manipulative').forEach((element) => {
+document.querySelectorAll('.to-change').forEach((element) => {
     changeWithDelay(2000, element);
 })
 
