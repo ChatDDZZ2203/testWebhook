@@ -10,7 +10,7 @@ app.register_blueprint(js_blueprint)
 
 
 @app.route('/tft', methods=['GET'])
-def simple():
+def handle_test():
     """
     :returns: rendered template
     Injects file and name to an index.html
