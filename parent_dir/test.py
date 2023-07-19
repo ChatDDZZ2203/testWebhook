@@ -2,10 +2,9 @@
 import os
 
 # External modules
-from flask import Flask, render_template, Blueprint
+from flask import Flask, render_template
 
 app = Flask(__name__)
-js_blueprint = Blueprint('js', __name__, static_folder='static')
 
 
 def handle_test():
@@ -17,7 +16,6 @@ def handle_test():
 
 
 def set_me_up(raw_app: Flask):
-    raw_app.register_blueprint(js_blueprint)
     raw_app.add_url_rule(
         '/test', 'handle_test', handle_test, methods=['GET']
     )
