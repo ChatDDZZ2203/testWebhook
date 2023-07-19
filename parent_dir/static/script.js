@@ -4,7 +4,7 @@ function sleep(ms) {
 
 async function changeWithDelay(delayMS, element) {
   await sleep(delayMS);
-  element.innerText = `This element was changed after ${delayMS / 1000} seconds passed from the program start`;
+  element.innerText = `Can the phrase "different people are celebrating differently" be the excuse for my kind of not healthy celebration of THIS SHIT STARTING TO WORK?`;
 }
 
 document.querySelectorAll('.to-change').forEach((element) => {
